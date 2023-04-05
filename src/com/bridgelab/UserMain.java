@@ -14,6 +14,13 @@ public class UserMain {
 		}else {
 			System.out.println("InValid firstname");
 		}
+		System.out.println("enter last name to validate");
+		String lastname=sc.next();
+		if(user.ValidationLastname(lastname)==true) {
+			System.out.println("Valid lastname");
+		}else {
+			System.out.println("InValid laststname");
+		}
 
 	}
 

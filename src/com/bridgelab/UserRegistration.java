@@ -8,5 +8,12 @@ public class UserRegistration {
 		boolean matches=pat.matcher(firstname).matches();
 		return matches;
 	}
+	public boolean ValidationLastname (String lastname) {
+		Pattern pat=Pattern.compile("^[A-Z][a-zA-Z]{2,}");
+		boolean matches=pat.matcher(lastname).matches();
+		return matches;
+	}
+	
+	
 
 }
