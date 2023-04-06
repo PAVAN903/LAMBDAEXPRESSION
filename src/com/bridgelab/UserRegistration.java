@@ -29,8 +29,13 @@ public class UserRegistration {
 		return matches;
 	}
 	public boolean ValidationPaasword1(String passwordRule1) {
-		Pattern pat = Pattern.compile("^[a-zA-Z]{8,}");
+		Pattern pat = Pattern.compile("^[a-z]{8,}");
 		boolean matches = pat.matcher(passwordRule1).matches();
+		return matches;
+	}
+	public boolean ValidationPaasword2(String passwordRule2) {
+		Pattern pat = Pattern.compile("^[a-zA-Z]{8,}");
+		boolean matches = pat.matcher(passwordRule2).matches();
 		return matches;
 	}
 }
