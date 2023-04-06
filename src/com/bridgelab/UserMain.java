@@ -56,6 +56,13 @@ public class UserMain {
 		} else {
 			System.out.println("InValid password");
 		}
+		System.out.println("enter password to validate");
+		String passwordRule4 = sc.next();
+		if (user.ValidationPaasword4(passwordRule4) == true) {
+			System.out.println("Valid password");
+		} else {
+			System.out.println("InValid password");
+		}
 
 	}
 

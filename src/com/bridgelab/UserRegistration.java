@@ -45,4 +45,10 @@ public class UserRegistration {
 		return matches;
 	
 	}
+	public boolean ValidationPaasword4(String passwordRule4) {
+		Pattern pat = Pattern.compile("^[a-zA-Z]{8,}[!@#$%^&*]{1,}[0-9]{1,}");
+		boolean matches = pat.matcher(passwordRule4).matches();
+		return matches;
+	
+	}
 }
