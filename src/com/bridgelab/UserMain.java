@@ -5,28 +5,42 @@ import java.util.Scanner;
 public class UserMain {
 
 	public static void main(String[] args) {
-		UserRegistration user=new UserRegistration();
-		Scanner sc=new Scanner(System.in);
+		UserRegistration user = new UserRegistration();
+		Scanner sc = new Scanner(System.in);
 		System.out.println("enter first name to validate");
-		String firstname=sc.next();
-		if(user.Validationfirstname(firstname)==true) {
+		String firstname = sc.next();
+		if (user.Validationfirstname(firstname) == true) {
 			System.out.println("Valid firstname");
-		}else {
+		} else {
 			System.out.println("InValid firstname");
 		}
 		System.out.println("enter last name to validate");
-		String lastname=sc.next();
-		if(user.ValidationLastname(lastname)==true) {
+		String lastname = sc.next();
+		if (user.ValidationLastname(lastname) == true) {
 			System.out.println("Valid lastname");
-		}else {
+		} else {
 			System.out.println("InValid laststname");
 		}
 		System.out.println("enter mailId to validate");
-		String mail=sc.next();
-		if(user.ValidationLastname(lastname)==true) {
+		String mail = sc.next();
+		if (user.Validationmail(mail) == true) {
 			System.out.println("Valid mail Id");
-		}else {
+		} else {
 			System.out.println("InValid mail Id");
+		}
+		System.out.println("enter mobile number to validate");
+		String mobile = sc.next();
+		if (user.Validationmobile(mobile) == true) {
+			System.out.println("Valid mobile number");
+		} else {
+			System.out.println("InValid mobile number");
+		}
+		System.out.println("enter password to validate");
+		String passwordRule1 = sc.next();
+		if (user.ValidationPaasword1(passwordRule1) == true) {
+			System.out.println("Valid password");
+		} else {
+			System.out.println("InValid password");
 		}
 
 	}
